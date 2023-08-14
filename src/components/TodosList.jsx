@@ -1,11 +1,13 @@
-const TodosList = (props) => {
-  const { todosProps } = props;
+import TodoItem from "./TodoItem";
+
+const TodosList = ({ todosProps }) => {
   return (
     <ul>
       {todosProps.map((todo) => (
-        <li>{todo.title}</li>
+        <TodoItem key={todo.id} itemProp={todo} />
       ))}
     </ul>
   );
 };
 export default TodosList;
+
