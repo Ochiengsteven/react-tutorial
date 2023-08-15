@@ -21,8 +21,8 @@ const TodosLogic = () => {
   ];
   return (
     <div>
-        <InputTodo />
-        <TodosList todosProps={todos} />
+      <InputTodo />
+      <TodosList todosProps={todos} />
     </div>
   );
 };
